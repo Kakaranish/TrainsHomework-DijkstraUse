@@ -18,14 +18,6 @@ class Set
         Node<U> *nextNode = nullptr;
 
         Node(U _value, Node<U> *_nextNode = nullptr) : value(_value), nextNode(_nextNode) {}
-
-        Node<U> &operator++()
-        {
-
-            this = this->nextNode;
-
-            return *this;
-        }
     };
 
     //Fields

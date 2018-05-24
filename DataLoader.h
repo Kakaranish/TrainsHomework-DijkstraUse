@@ -20,11 +20,10 @@ class DataLoader
     typedef int company_type;
 
     //FIELDS
-    unsigned vertexes_num, //n
+    unsigned vertexes_num,    //n
         edges_num,            //m
-        companies_num;        //k
-
-    unsigned start_vertex;
+        companies_num,        //k
+        start_vertex;         //s
 
     //METHODS
     void initPenalties_arr();

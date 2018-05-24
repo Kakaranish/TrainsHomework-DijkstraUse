@@ -65,9 +65,9 @@ DataLoader::DataLoader(std::string filename, bool zeroIsFirstIndex)
         throw std::runtime_error("Unable to open given file: " + filename);
 
     std::string curr_line;
-    std::getline(file_handle, curr_line);
 
     //Loading first line
+    std::getline(file_handle, curr_line);
     auto vec_of_extracted_int_nums = extractIntegersFromString(curr_line);
     if (vec_of_extracted_int_nums.size() != 4)
         throw std::runtime_error("Incorrect format of file!");
@@ -79,8 +79,8 @@ DataLoader::DataLoader(std::string filename, bool zeroIsFirstIndex)
     if(!zeroIsFirstIndex)
         --start_vertex;
 
-    //Loading penalties
 
+    //Loading penalties
     initPenalties_arr();
     for (int i = 0; i < companies_num; i++)
     {
@@ -100,8 +100,9 @@ DataLoader::DataLoader(std::string filename, bool zeroIsFirstIndex)
         std::getline(file_handle, curr_line);
         vec_of_extracted_int_nums = extractIntegersFromString(curr_line);
 
-        if(!zeroIsFirstIndex){
-            --vec_of_extracted_int_nums[0];
+        if(!zeroIsFirstIndex)
+        {
+            --vec_of_extracted_int_nums[0]; 
             --vec_of_extracted_int_nums[1];
             --vec_of_extracted_int_nums[3];
         }
