@@ -36,6 +36,7 @@ void findShortestRoutesToOtherCities(std::string filename, bool zeroIsFirstVerte
 
     while (!Q_set.isEmpty())
     {
+        //Pair which first part is distance value and second is VertexIndex
         Pair<unsigned, int> distanceVertexPair(std::numeric_limits<unsigned>::max(), std::numeric_limits<unsigned>::max());
 
         //From the set Q we want to choose the vertex with the smallest distance from s
@@ -61,7 +62,7 @@ void findShortestRoutesToOtherCities(std::string filename, bool zeroIsFirstVerte
             if (currentEdge.first == -1)
                 continue;
 
-            //Neighbour must be in Q_set
+            //Neighbor must be in Q_set
             if (!Q_set.contains(i))
                 continue;
 
