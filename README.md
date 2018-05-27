@@ -8,11 +8,11 @@ Opis wyjścia
 n liczb całkowitych oddzielonych znakiem spacji. i-ta liczba to najmniejszy koszt podróży z miasta s do miasta i. Jeśli zadana podróż jest niewykonalna, wówczas koszt to -1.
 
 Zakresy używanych wartości
-•1 ≤ n, m ≤ 100000
-•1 ≤ k ≤ 10
-•1 ≤ ci ≤ 10000
-•1 ≤ ui, vi ≤ n
-•1 ≤ ti ≤ k
+1 ≤ n, m ≤ 100000
+1 ≤ k ≤ 10
+1 ≤ c_i ≤ 10000
+1 ≤ u_i, v_i ≤ n
+1 ≤ t_i ≤ k
 
 Przykład wejścia:
 5 4 2 3
